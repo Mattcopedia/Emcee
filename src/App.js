@@ -1,44 +1,29 @@
-import React from 'react';
+import { CTA, Navbar } from "./components";
+import { Footer, Header, Possibility, WhatGPT3 } from "./containers";
 
-import { Footer, Possibility, WhatGPT3, Header } from './containers';
-import { CTA } from './components';
-import { Navbar } from './components';  
-
-import './App.css';
-import ReactYouTubeExample from './MctinaYoutube';
-import ReactAboutExample from './AboutmeYoutube'; 
-import SocialFollow from './SocialFollow'; 
-
+import "./App.css";
+import SocialFollow from "./SocialFollow";
+import ThreeScene from "./components/Threejs/ThreeScene";
 
 const App = () => (
-  
   <div className="App">
-    <div className="gradient__bg">   
- 
+    <div className="gradient__bg">
       <Navbar />
-       
+
       <Header />
-
-    
     </div>
-    <ReactYouTubeExample />  
 
-    {/* <Brand />  */} 
-    <WhatGPT3 /> 
-    {/* <Features /> */} 
+    {/* <Brand />  */}
+    <WhatGPT3 />
+    {/** ThreeJS scene */}
+    <ThreeScene />
+    {/* <Features /> */}
     <Possibility />
-    <ReactAboutExample /> 
     <CTA />
-    {/* <Blog /> */}  
-    <SocialFollow /> 
+    {/* <Blog /> */}
+    <SocialFollow />
     <Footer />
-
-
-     
-    
-  </div> 
-
-
+  </div>
 );
 
 export default App;
